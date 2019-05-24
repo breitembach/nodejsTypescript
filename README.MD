@@ -2,6 +2,11 @@
 
 Project base Nodejs with Typescript;
 
+### DEVELOPMENT
+`> npm run dev`
+
+## PRODUCTION
+`> npm run build`
 
 ### USAGE
 `> npm install -g typescript`
