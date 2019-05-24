@@ -8,8 +8,11 @@ Project base Nodejs with Typescript;
 ## PRODUCTION
 `> npm run build`
 
+`> node src/server.js`
+
 ### USAGE
 `> npm install -g typescript`
+
 `> npm install -g eslint`
 
 `> npm install`
