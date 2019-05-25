@@ -4,10 +4,12 @@ import mongoose from 'mongoose'
 
 import dotenv from 'dotenv'
 import morgan from 'morgan'
-
 import userRoutes from './routes/UserRoutes'
-// import motoristPublicRoutes from './routes/MotoristPublicRoutes'
 import Authentication from './oauth/Authentication'
+// import motoristPublicRoutes from './routes/MotoristPublicRoutes'
+// import Authentication from './oauth/Authentication'
+
+// https://www.npmjs.com/package/passport-jwt
 
 class App {
   public express: express.Application
