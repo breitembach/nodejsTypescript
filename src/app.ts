@@ -3,9 +3,10 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 
 import dotenv from 'dotenv'
+import morgan from 'morgan'
 
 import userRoutes from './routes/UserRoutes'
-import motoristPublicRoutes from './routes/MotoristPublicRoutes'
+// import motoristPublicRoutes from './routes/MotoristPublicRoutes'
 import Authentication from './oauth/Authentication'
 
 class App {
@@ -22,6 +23,7 @@ class App {
   private middlewares (): void {
     this.express.use(express.json())
     this.express.use(cors())
+    this.express.use(morgan('dev'))
   }
 
   private database (): void {
@@ -29,8 +31,8 @@ class App {
   }
 
   private routes (): void {
-    this.express.use('/api/v1/users', motoristPublicRoutes)
-    this.express.use('/api/v1/users', Authentication.autentication, userRoutes)
+    // this.express.use('/api/v1/users', motoristPublicRoutes)
+    this.express.use('/api/v1/users', Authentication.isAutenticated, userRoutes)
     // this.express.use('motorists', motoristRoutes)
   }
 

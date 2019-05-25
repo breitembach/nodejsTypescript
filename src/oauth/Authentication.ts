@@ -1,4 +1,4 @@
-import { UserModel } from "../schemas/User";
+// import { UserModel } from '../schemas/User'
 
 // abstract class Authentication {
 //     login() {
@@ -12,9 +12,10 @@ import { UserModel } from "../schemas/User";
 //     }
 // }
 
-
-export default class Authentication {
-    static autentication(req, res, next) {
-        return;
-    }
+class Authentication {
+  public isAutenticated (req, res, next): void {
+    req.data = 'save user here'
+    next()
+  }
 }
+export default new Authentication()

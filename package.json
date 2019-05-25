@@ -21,6 +21,7 @@
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.4.19",
+    "morgan": "^1.9.1",
     "node-stopwatch": "0.0.1"
   },
   "devDependencies": {
@@ -30,6 +31,7 @@
     "@types/jsonwebtoken": "^8.3.2",
     "@types/mongodb": "^3.1.22",
     "@types/mongoose": "^5.3.23",
+    "@types/morgan": "^1.7.35",
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^1.4.2",
     "eslint": "^5.15.3",

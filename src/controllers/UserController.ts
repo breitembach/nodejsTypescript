@@ -23,7 +23,7 @@ class UserController {
   public async find (req: Request, res: Response): Promise<Response> {
     try {
       const users = await User.find()
-
+      console.log(req['user'])
       return res.status(200).json(users)
     } catch (error) {
       // return res.status(500).json(new ApiResponse("dasd",false, ));
